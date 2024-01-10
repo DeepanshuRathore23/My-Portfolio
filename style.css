@@ -1,0 +1,259 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "general sans";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#mini-circle{
+    height: 10px;
+    width: 10px;
+    color: white;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#main{
+    background-color: black;
+}
+#landing-page{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+
+}
+.boundary h1{
+    background-color: red;
+    transform: translateY(50%);
+    overflow: hidden;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    font-size: 110%;    
+    padding-top: 30px;
+    
+}
+
+#navbar-Menu{
+    text-align: right;
+    margin-left: auto;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+    padding-left: 25px;
+    
+    
+}
+
+#heading{
+    overflow: hidden;
+}
+
+#heading h1{
+    line-height: 1;
+    font-size: 9vw;
+    opacity: 55%;
+    
+}
+
+#web{
+    margin-top: 120px;
+    margin-left: 2rem;
+}
+
+#developer{
+    margin-left: 7rem;
+}
+
+#sub-main{
+    font-size: 1vw;
+    display: flex;    
+    margin-top: 220px;
+}
+
+#freelance{
+    align-items: right;
+    margin-left: auto;
+    padding-right: 15px;   
+}
+
+#down-arrow{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#projects{
+    
+    padding: 5vh;
+    
+    height: 40vw;
+    background-color: black;
+}
+
+#project{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    /* width: 85%; */
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+
+    width: 100%;
+}
+#project h1{
+    text-transform: uppercase;
+    font-size: 8vw;
+    opacity: 70%;
+}
+
+#project a{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
+#project img{
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+#about{
+    background-color: black;
+    display: flex;
+    color: white;
+    padding-left: 20%;
+    padding-bottom: 20vh;
+
+}
+
+
+
+#about h5{
+    opacity: 70%;
+}
+
+#about img{
+    width: 20vw;
+    padding-left: 30vw;
+    padding: 7vw;
+    padding-right: 1vw;
+}
+#infoabout{
+    padding-left: 3vw;
+    padding-right: 10vw;    
+    padding-top: 6vw;
+}
+
+#infoabout p{
+    font-size: 1.5vw;
+    padding-bottom: 1vh;
+
+}
+#about #talk{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border: 2px solid white ;
+    border-radius: 16px;
+    margin-top: 40px;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+@media screen and (max-width:425px){
+    #about{
+        display:grid;
+    }   
+
+    #infoabout p{
+        font-size: 2.5vw;
+    }
+
+    #about img{
+        padding-left: 20%;
+        justify-content: center;
+    }
+}
+
+#footer{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+
+
+#footer-left{
+    display: flex;
+    padding-left: 20px;
+    gap: 20px;
+}
+
+#footer-right{
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    
+}
+
+#footer p{
+    font-size: 1.8vw;
+}
+
+#footer a{
+    font-size: 1.8vw;
+    text-decoration: none;
+    color: white;
+    gap: 15px;
+    opacity: 1;
+    transition: opacity 0.5s  ease;
+}
+
+
+@media screen and (max-width: 540px) {
+    #footer-left{
+        gap: 10px;
+    }
+    #footer-right{
+        gap: 10px;
+    }
+    
+}
+
+#footer-right a:hover{
+    opacity: 70%;
+}
+
+#about #talk:hover{
+    color: black;
+    background-color: white;
+    border: none;
+
+}
