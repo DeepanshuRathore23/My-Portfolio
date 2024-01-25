@@ -87,6 +87,13 @@ html,body{
     margin-top: 220px;
 }
 
+@media screen and (max-width:660px) {
+    
+    #sub-main{
+        font-size: 10px;        
+    }
+}
+
 #freelance{
     align-items: right;
     margin-left: auto;
