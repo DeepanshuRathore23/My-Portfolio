@@ -1,269 +1,249 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     font-family: "general sans";
 }
-html,body{
+
+html, body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
-
-
-/* #crsr{
-    height: 10px;
-    width: 10px;
-    color: white;
-    position: absolute;
-    z-index: 9999;
-    
-    border-radius: 50%;
-    background-color: white;
-} */
-
-#main{
-    background-color: black;
-}
-#landing-page{
-    width: 100%;
-    height: 100vh;
+#main {
     background-color: black;
     color: white;
-
-}
-.boundary h1{
-    background-color: red;
-    transform: translateY(50%);
-    overflow: hidden;
 }
 
-#navbar{
+/* Navbar */
+#navbar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 5px;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 20px;
-    font-size: 110%;    
-    padding-top: 30px;
-    
 }
 
-#navbar-Menu{
-    text-align: right;
-    margin-left: auto;
-    padding-right: 25px;
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 25px; /* Adjust this as needed */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #navbar a {
+        font-size: 1rem;
+    }
+}
+
+#navbar-Menu {
     cursor: pointer;
 }
 
-#navbar a{
-    text-decoration: none;
-    color: white;
-    padding-left: 25px;
-    
-    
+/* Main Heading Section */
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
 }
 
-#heading{
-    overflow: hidden;
-}
-
-#heading h1{
-    line-height: 1;
+#heading h1 {
     font-size: 9vw;
     opacity: 55%;
-    
+    line-height: 1;
+    margin: 0;
 }
 
-#web{
-    margin-top: 120px;
-    margin-left: 2rem;
-}
-
-#developer{
-    margin-left: 7rem;
-}
-
-#sub-main{
+#sub-main {
     font-size: 1vw;
-    display: flex;    
-    margin-top: 220px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media screen and (max-width:660px) {
-    
-    #sub-main{
-        font-size: 10px;        
-    }
+#freelance {
+    text-align: center;
 }
 
-#freelance{
-    align-items: right;
-    margin-left: auto;
-    padding-right: 15px;   
-}
-
-#down-arrow{
-    padding-right: 10px;
+#down-arrow {
+    font-size: 2rem;
+    margin-top: 15px;
     cursor: pointer;
 }
 
-#projects{
-    
-    padding: 5vh;
-    
-    height: 40vw;
+/* Projects Section */
+#projects {
+    padding: 5vh 10%;
     background-color: black;
 }
 
-#project{
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+#project {
+    padding: 3vh 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    /* width: 85%; */
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
-
-    width: 100%;
-}
-#project h1{
-    text-transform: uppercase;
-    font-size: 8vw;
-    opacity: 70%;
 }
 
-#project a{
+#project h2 {
+    font-size: 2rem;
+}
+
+#project a {
     text-decoration: none;
     color: white;
-
 }
 
-
-
-
-#project img{
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-#about{
-    background-color: black;
+/* About Section */
+#about {
     display: flex;
-    color: white;
-    padding-left: 20%;
-    padding-bottom: 20vh;
-    padding-top: 2vh;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 2vh 10%;
+    background-color: black;
 }
 
+#about img {
+    width: 200px;
+    margin: 20px;
+}
 
+#infoabout {
+    max-width: 500px;
+    margin: auto;
+}
 
-#about h5{
+#infoabout h5 {
     opacity: 70%;
 }
 
-#about img{
-    width: 20vw;
-    padding-left: 30vw;
-    padding: 7vw;
-    padding-right: 1vw;
-}
-#infoabout{
-    padding-left: 3vw;
-    padding-right: 10vw;    
-    padding-top: 6vw;
+#infoabout p {
+    font-size: 1rem;
 }
 
-#infoabout p{
-    font-size: 1.5vw;
-    padding-bottom: 1vh;
-
-}
-#about #talk{
+#about #talk {
+    display: inline-block;
     color: white;
     text-decoration: none;
     background-color: black;
-    border: 2px solid white ;
+    border: 2px solid white;
     border-radius: 16px;
-    margin-top: 40px;
-    padding: 3px;
-    padding-left: 8px;
-    padding-right: 8px;
-    transition: color 0.5s ease, background-color 0.5s ease;
-}
-@media screen and (max-width:425px){
-    #about{
-        display:grid;
-    }   
-
-    #infoabout p{
-        font-size: 2.5vw;
-    }
-
-    #about img{
-        padding-left: 20%;
-        justify-content: center;
-    }
+    padding: 5px 10px;
+    margin-top: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-#footer{
-    width: 100%;
-    height: 50px;
-    color: white;
-    background-color: black;
+#about #talk:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Footer */
+#footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+    padding: 20px;
+    background-color: black;
 }
 
-
-
-#footer-left{
-    display: flex;
-    padding-left: 20px;
-    gap: 20px;
-}
-
-#footer-right{
-    display: flex;
-    gap: 20px;
-    padding-right: 20px;
-    
-}
-
-#footer p{
-    font-size: 1.8vw;
-}
-
-#footer a{
-    font-size: 1.8vw;
+#footer a {
     text-decoration: none;
     color: white;
-    gap: 15px;
     opacity: 1;
-    transition: opacity 0.5s  ease;
+    transition: opacity 0.3s ease;
 }
 
-
-@media screen and (max-width: 540px) {
-    #footer-left{
-        gap: 10px;
-    }
-    #footer-right{
-        gap: 10px;
-    }
-    
-}
-
-#footer-right a:hover{
+#footer a:hover {
     opacity: 70%;
 }
 
-#about #talk:hover{
-    color: black;
-    background-color: white;
-    border: none;
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    #navbar {
+        font-size: 0.9rem;
+        padding: 15px 20px;
+    }
 
+    #heading h1 {
+        font-size: 8vw;
+    }
+
+    #sub-main {
+        font-size: 1.5rem;
+    }
+
+    #projects {
+        padding: 5vh 5%;
+    }
+
+    #project h2 {
+        font-size: 1.5rem;
+    }
+
+    #about img {
+        width: 150px;
+    }
+
+    #infoabout p {
+        font-size: 1rem;
+    }
+
+    #footer p, #footer a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #navbar a {
+        font-size: 0.8rem;
+    }
+
+    #landing-page {
+        padding: 20px;
+    }
+
+    #heading h1 {
+        font-size: 10vw;
+    }
+
+    #projects {
+        padding: 5vh 2%;
+    }
+
+    #project h2 {
+        font-size: 1.2rem;
+    }
+
+    #about img {
+        width: 120px;
+    }
+
+    #infoabout p {
+        font-size: 0.9rem;
+    }
+
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer p, #footer a {
+        font-size: 0.9rem;
+    }
 }
